@@ -5,9 +5,9 @@ import bcrypt
 def main(inMode=-1, inPwd=""):
     hashMode = 0
 
-    print("~~~~~~~~~~~~~~~~~~~")
-    print("~~~~~ CRACKER ~~~~~")
-    print("~~~~~~~~~~~~~~~~~~~")
+    print("XXXXXXXXXXXXXXXXXXX")
+    print("XXXXX CRACKER XXXXX")
+    print("XXXXXXXXXXXXXXXXXXX")
 
     if inMode != -1:
         print("Using mode", inMode, "...")
