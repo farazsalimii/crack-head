@@ -6,7 +6,7 @@ def main(inMode=-1, inPwd=""):
     hashMode = 0
 
     print("~~~~~~~~~~~~~~~~~~~")
-    print("~~~ CRACKER9000 ~~~")
+    print("~~~~~ CRACKER ~~~~~")
     print("~~~~~~~~~~~~~~~~~~~")
 
     if inMode != -1:
