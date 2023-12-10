@@ -1,6 +1,6 @@
 import sys
 import hashlib
-import bcrypt
+import subprocess
 
 # run pip install bcrypt in terminal
 try:
@@ -26,7 +26,8 @@ def get_password():
 
 def get_mode_choice():
     try:
-        return int(input("\nEnter 0 to change password\n"\
+        return int(input("\n---------Options---------\n"
+                          "Enter 0 to change password\n"\
                           "Enter 1 to use dictionary\n"\
                           "Enter 2 to brute force\n"\
                           "Enter 3 to convert to MD5\n"\
