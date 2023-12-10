@@ -2,6 +2,9 @@ import sys
 import hashlib
 import bcrypt
 
+# run pip install bcrypt in terminal
+run = True
+
 def print_header():
     print("-------------------------------------\n"\
           "--- crackhead cracker crack crack ---\n"\
