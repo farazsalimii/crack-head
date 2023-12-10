@@ -3,7 +3,18 @@ import hashlib
 import bcrypt
 
 # run pip install bcrypt in terminal
-run = True
+try:
+    import bcrypt
+except ImportError:
+    print("bcrypt not found. Attempting to install...")
+    try:
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'bcrypt'])
+        import bcrypt  # Now that bcrypt is installed, import it
+    except subprocess.CalledProcessError:
+        print("Error installing bcrypt. Please install it manually using 'pip install bcrypt'")
+        sys.exit(1)
+
+run = True 
 
 def print_header():
     print("-------------------------------------\n"\
